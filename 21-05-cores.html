@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores Randow</title>
+</head>
+<body>
+    <h1>Como deixar o background com cores dinâmicas?</h1>
+    <p></p>
+    <button onclick="trocarcores()">Clique aqui para mudar as cores</button>
+
+    <script>
+        let Listadecores = ['green', 'blue', 'white', 'orange', 'gray', 'red', 'pink', 'yellow', 'purple'];
+        function trocarcores() {
+            document.body.style.backgroundColor=Listadecores[Math.floor(9*Math.random())];
+        }
+    </script>
+</body>
+</html>
