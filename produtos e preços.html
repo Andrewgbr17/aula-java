@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Produtos e Precos</title>
+    </head>
+    <body>
+        <h1>Produtos e Precos</h1>
+        <button onclick="botao1()">Ver produtos e precos</button>
+    </body>
+    <body>
+        <script>
+            function botao1(){
+               let produto1 = window.prompt('Qual o produto?')
+               let preco1 =Number(window.prompt('Qual o preço?'))
+               let produto2 = window.prompt('Qual o produto?')
+               let preco2 =Number(window.prompt('Qual o preço?'))
+               let produto3 = window.prompt('Qual o produto?')
+               let preco3 =Number(window.prompt('Qual o preço?'))
+               let total = preco1+preco2+preco3
+               window.alert(`Olá, voce comprou ${produto1}, ${produto2}, ${produto3}! e gastou ${total}!`)
+
+            }
+        </script>
+    </body>
+</html>
